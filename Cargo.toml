@@ -1,0 +1,20 @@
+[package]
+name = "jxl_dynlink"
+version = "0.1.0"
+edition = "2021"
+keywords = ["jxl", "jpeg-xl"]
+categories = ["multimedia::images", "external-ffi-bindings"]
+description = "Rust bindings for JPEG XL library using dynamic linking"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/gembleman/jxl_dynlink"
+
+[dependencies]
+libloading = "0.8.6"
+image = { version = "0.25.5", default-features = false, features = ["png"] }
+
+[lib]
+name = "jxl_dynlink"
+crate-type = ["rlib", "cdylib"]
+
+
+[dev-dependencies]

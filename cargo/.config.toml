@@ -1,0 +1,2 @@
+﻿[env]
+PATH = { value = "dlls", relative = true }

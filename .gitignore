@@ -1,0 +1,6 @@
+/target
+/test_imgs
+/dlls
+/decoder.txt
+/encoder.txt
+/*.dll
